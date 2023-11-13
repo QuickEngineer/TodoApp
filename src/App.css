@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body{
+  height:100%;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color:#98c8f0;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
+  position:relative;
+  min-height:100%;
+}
+
+.appBox{
+  background-image:none;
+  background-color:white;
+  width:300px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px 20px;
+  border-radius:7px;
+}
+
+.title{
+  padding: 0px 10px 10px 0px;
+  font-size:24px;
+  margin-left: 10px;
+}
+
+.searchBox{
+  display:flex;
+}
+
+.searchBox input{
+  height:30px;
+  width: 225px;
+  font-size:16px;
+  border-radius:5px;
+  padding-left: 10px;
+  margin-left:auto;
+}
+
+.searchBox button{
+  width:35px;
+  height:35px;
+  background-color:#B873D5;
+  margin-left:5px;
+  margin-right:auto;
+  border:none;
+  border-radius: 10%;
+  color:white;
+  font-size:30px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.searchBox button:hover{
+  background-color: #e74c3c;
+  cursor:pointer;
+}
+
+.itemList {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Ställer in riktningen till vertikal */
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 10px; /* Lägg till lite avstånd mellan varje par */
+  height:45px;
+  background-color:#f0f0f0;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius:5px;
+}
+
+.itemContainer p{
+  margin-left:10px;
+}
+
+.itemContainer button{
+  color:white;
+  background-color:red;
+  border:none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  width:45px;
+  height:100%;
+}
+
+.itemContainer button:hover{
+  cursor:pointer;
+}
+
+.clearAllContainer {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centrera innehållet horisontellt */
+  align-items: center;
+  background-attachment: fixed;
+}
+
+.clearAllContainer p {
+  font-size: 16px;
+  margin-right: 10px; /* Lägg till mellanrum mellan text och knapp */
+}
+
+.clearAllBtn {
+  background-color: #B873D5; /* Röd färg, justera efter dina önskemål */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.clearAllBtn:hover {
+  background-color: #e74c3c; /* Mörkare röd färg på hover, justera efter dina önskemål */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
